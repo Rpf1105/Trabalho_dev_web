@@ -1,1 +1,1 @@
-Teste do readme no github
+Pagina web sobre avaliação de games.
