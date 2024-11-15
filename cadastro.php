@@ -2,16 +2,18 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="recursos/login.css">
+    <link rel="stylesheet" href="recursos/estilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Conta</title>
 </head>
 <body>
-
+    <?php include 'recursos/header.php'?>
+    <?php include 'recursos/loginhandler.php'?>
     <div class="container">
         <h2>Faça sua conta</h2>
-        <form action="/cadastro" method="POST">
-            <label for="nome">Nome Completo</label>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="POST">
+            <label for="nome">Nome de Usuario</label>
             <input type="text" id="nome" name="nome" required>
 
             <label for="email">E-mail</label>
@@ -20,8 +22,8 @@
             <label for="senha">Senha</label>
             <input type="password" id="senha" name="senha" required>
 
-            <label for="data_nascimento">Data de Nascimento</label>
-            <input type="date" id="data_nascimento" name="data_nascimento" required>
+            <label for="datanasc">Data de Nascimento</label>
+            <input type="date" id="datanasc" name="datanasc" required>
             
             <select name="" id="tema">
                 <option value="masc">Masculino</option>

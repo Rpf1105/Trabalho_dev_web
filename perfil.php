@@ -8,21 +8,7 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <header>
-            <h1><a href="">Hate Games</a></h1>
-            <div class="nav">
-                <ul class>
-                    <li><a href="index.html">Catálogo</a></li>
-                    <li><a href="">Sobre nós</a></li>
-                </ul>
-            </div>
-            <div class="login">
-                <ul class>
-                    <li><a href="">Cadastrar</a></li>
-                    <li><a href="login.hmtl">Entrar</a></li>
-                </ul>
-            </div>
-        </header>
+    <?php include 'recursos/header.php'?>
         <div class="content">
             <div class="main">
                 <h1>Configurações</h1><br>

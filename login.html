@@ -1,75 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="recursos/login.css">
+    <link rel="stylesheet" href="recursos/estilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-
-        label {
-            font-size: 14px;
-            margin-bottom: 6px;
-            display: block;
-        }
-
-        input[type="email"], input[type="password"], input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-
-        .form-footer {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .form-footer a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        .form-footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
-
+    <header>
+        <h1><a href="">SITE</a></h1>
+        <div class="nav">
+            <ul class>
+                <li><a href="/index.php">Página inicial</a></li>
+                <li><a href="">Sobre nós</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <ul class>
+                <li><a href="">Cadastrar</a></li>
+                <li><a href="/login.php">Entrar</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
     <div class="container">
         <h2>Login</h2>
         <form action="/login" method="POST">
@@ -84,6 +38,7 @@
         <div class="form-footer">
             <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
         </div>
+    </div>
     </div>
 
 </body>
