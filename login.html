@@ -1,52 +1,90 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="recursos/estilo.css">
-        <title>Login Usuário</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <header>
-            <h1><a href="">Hate Games</a></h1>
-            <div class="nav">
-                <ul class>
-                    <li><a href="index.html">Catálogo</a></li>
-                    <li><a href="">Sobre nós</a></li>
-                </ul>
-            </div>
-            <div class="login">
-                <ul class>
-                    <li><a href="">Cadastrar</a></li>
-                    <li><a href="login.hmtl">Entrar</a></li>
-                </ul>
-            </div>
-        </header>
-        <div class="content">
-            <div class="main">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-                <h1>Entre com sua conta</h1>
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
 
+        h2 {
+            text-align: center;
+            color: #333;
+        }
 
-        <form>
-            <label for="usuario">Usuário: </label>
-            <input type="text" id="usuario" name="usuario"> <br>
+        label {
+            font-size: 14px;
+            margin-bottom: 6px;
+            display: block;
+        }
 
+        input[type="email"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-            <label for="senha">Senha:</label>
-            <input 
-                type="password" 
-                id="senha" 
-                name="senha"
-            >
-            <br>
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
 
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
 
-            <input type="submit" value="Entrar"> 
+        .form-footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .form-footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <input type="submit" value="Entrar">
         </form>
-            </div>
+        <div class="form-footer">
+            <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
         </div>
+    </div>
 
-
-
-    </body>
+</body>
 </html>
