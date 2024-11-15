@@ -18,3 +18,17 @@ function checkcadastro(){
 
     return isvalid
 }
+
+function getProfile(){
+    //nome do usuario, placeholder, vai puxar do banco de dados
+    let nome = "Rogerio Perso Filho";
+    document.getElementById("nome").textContent=nome;
+    //pegar imagem do usuario aqui, tambem banco
+    let path = "";
+    document.getElementById("foto").src=path;
+}
+
+
+function pageTheme(){
+    
+}

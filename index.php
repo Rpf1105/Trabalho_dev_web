@@ -16,20 +16,17 @@
             <div class="login">
                 <ul class>
                     <li><a href="">Cadastrar</a></li>
-                    <li><a href="">Entrar</a></li>
+                    <li><a href="/login.php">Entrar</a></li>
                 </ul>
             </div>
         </header>
         <div class="content">
             <div class="main">
-                <H1>Pagina de login</H1>
-                <form action="">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email"><br>
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="senha"><br>
-                    <input type="submit" value="enviar">
-                </form>
+                <H1>CATALOGO</H1>
+                <?php 
+                
+                
+                ?>
             </div>
         </div>
     </body>
