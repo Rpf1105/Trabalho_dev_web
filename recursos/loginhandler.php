@@ -25,6 +25,6 @@
         $nome = check_input($_POST["nome"]);
         $email = check_input($_POST["email"]);
         $senha = check_input($_POST["senha"]);
-        $date = check_input($_POST["senha"]);
+        $datanasc = check_input($_POST["datanasc"]);
     }
 ?>

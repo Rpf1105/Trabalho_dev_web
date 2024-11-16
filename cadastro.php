@@ -9,10 +9,9 @@
 </head>
 <body>
     <?php include 'recursos/header.php'?>
-    <?php include 'recursos/loginhandler.php'?>
     <div class="container">
         <h2>Faça sua conta</h2>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="POST">
+        <form action="" method="POST">
             <label for="nome">Nome de Usuario</label>
             <input type="text" id="nome" name="nome" required>
 
