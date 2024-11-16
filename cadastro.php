@@ -11,7 +11,7 @@
     <?php include 'recursos/header.php'?>
     <div class="container">
         <h2>Faça sua conta</h2>
-        <form action="" method="POST">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="POST">
             <label for="nome">Nome de Usuario</label>
             <input type="text" id="nome" name="nome" required>
 
@@ -24,7 +24,7 @@
             <label for="datanasc">Data de Nascimento</label>
             <input type="date" id="datanasc" name="datanasc" required>
             
-            <select name="" id="tema">
+            <select name="sexo" id="sexo">
                 <option value="masc">Masculino</option>
                 <option value="fem">Feminino</option>
                 <option value="nao">Prefiro não dizer</option>
@@ -36,6 +36,6 @@
             <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
         </div>
     </div>
-
+    <?php include 'recursos/loginhandler.php'?>
 </body>
 </html>
