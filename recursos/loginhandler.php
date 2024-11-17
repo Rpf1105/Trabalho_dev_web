@@ -52,9 +52,9 @@ $db = "CREATE DATABASE IF NOT EXISTS trabalho";
         $datanasc = check_input($_POST["datanasc"]);
         $sexo = $_POST['sexo'];
     }
-    $db = "INSERT INTO dados_usuario(nickname, senha, email) VALUES ($nome, $senha, $email)";
+    $db = "INSERT INTO dados_usuario(nickname, senha, email, nascimento, sexo) VALUES ('$nome', '$senha', '$email', '$datanasc', '$sexo')";
     if ($conex->query($db) === TRUE){
-        echo "Dados inseridos com sucesso";
+        echo "";
     }
     else {
         echo "Erro ao inserir dados" . $conex->error;

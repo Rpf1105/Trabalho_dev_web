@@ -24,7 +24,7 @@
             <label for="datanasc">Data de Nascimento</label>
             <input type="date" id="datanasc" name="datanasc" required>
             
-            <select name="sexo" id="sexo">
+            <select name="sexo" id="sexo[]">
                 <option value="masc">Masculino</option>
                 <option value="fem">Feminino</option>
                 <option value="nao">Prefiro não dizer</option>
