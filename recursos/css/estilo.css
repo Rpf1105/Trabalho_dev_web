@@ -45,7 +45,7 @@ header *{
     color: #FFF;
     text-decoration: none;
 }
-header *:hover{
+header a:hover{
     color: #D00
 }
 /*Conteudo principal*/
@@ -66,7 +66,4 @@ header *:hover{
 }
 .left{
     width: 70%;
-}
-.preview{
-    
 }

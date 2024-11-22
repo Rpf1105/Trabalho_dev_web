@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="recursos/estilo.css">
-        <link rel="stylesheet" href="recursos/perfil.css">
+        <link rel="stylesheet" href="recursos/css/estilo.css">
+        <link rel="stylesheet" href="recursos/css/perfil.css">
         <script src="recursos/javascript.js"></script>
         <title>Perfil e Configurações</title>
         <meta charset="utf-8">
     </head>
     <body>
-    <?php include 'recursos/header.php'?>
+    <?php include 'recursos/scripts_php/header.php'?>
         <div class="content">
             <div class="main">
                 <h1>Configurações</h1><br>

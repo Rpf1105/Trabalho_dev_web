@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="recursos/login.css">
-    <link rel="stylesheet" href="recursos/estilo.css">
+    <link rel="stylesheet" href="recursos/css/login.css">
+    <link rel="stylesheet" href="recursos/css/estilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
 <body>
-    <?php include 'recursos/header.php'?>
+    <?php include 'recursos/scripts_php/header.php'?>
     <div class="content">
     <div class="container">
         <h2>Login</h2>
