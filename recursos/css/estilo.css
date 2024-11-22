@@ -67,3 +67,12 @@ header a:hover{
 .left{
     width: 70%;
 }
+
+.link_titulo{
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+}
+.link_titulo:hover{
+    color: #33F;
+}

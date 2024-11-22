@@ -36,7 +36,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) { 
         echo "<div class='produto'>
         <div class='left'>
-            <h2>" . $row["titulo"] . "</h2>
+            <a class='link_titulo' href=review.php?id=". $row["id"]. ">" . $row["titulo"] . "</a>
             <p>". $row["sinopse"] ."</p>
         </div>
     <div class='right'>
