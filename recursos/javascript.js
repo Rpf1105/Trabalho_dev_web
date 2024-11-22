@@ -19,6 +19,12 @@ function checkcadastro(){
     return isvalid
 }
 
+function erroCadastro(){
+    let erro_cad = document.getElementById("erro-cadastro");
+    document.getElementById("erro-cadastro").style.visibility= "visible";
+    erro_cad.textContent ="Esse email ja foi utilizado, por favor entre outro email"
+}
+
 function getProfile(){
     //nome do usuario, placeholder, vai puxar do banco de dados
     let nome = "Rogerio Perso Filho";
@@ -27,7 +33,6 @@ function getProfile(){
     let path = "";
     document.getElementById("foto").src=path;
 }
-
 
 function pageTheme(){
     

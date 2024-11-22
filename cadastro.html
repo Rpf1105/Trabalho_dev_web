@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="recursos/login.css">
+    <link rel="stylesheet" href="recursos/estilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Conta</title>
@@ -28,6 +29,7 @@
                 <option value="fem">Feminino</option>
                 <option value="nao">Prefiro não dizer</option>
             </select>
+            <div class='erro' id="erro-cadastro"></div>
 
             <input type="submit" value="Cadastrar">
         </form>
@@ -35,6 +37,7 @@
             <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
         </div>
     </div>
+    <script src="recursos/javascript.js">erroCadastro()</script>
 
 </body>
 </html>

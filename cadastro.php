@@ -9,6 +9,7 @@
 </head>
 <body>
     <?php include 'recursos/header.php'?>
+    <div class="content">
     <div class="container">
         <h2>Faça sua conta</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="POST">
@@ -24,18 +25,23 @@
             <label for="datanasc">Data de Nascimento</label>
             <input type="date" id="datanasc" name="datanasc" required>
             
-            <select name="sexo" id="sexo[]">
-                <option value="masc">Masculino</option>
-                <option value="fem">Feminino</option>
-                <option value="nao">Prefiro não dizer</option>
-            </select>
-
+            <div class="custom_select">
+                <label for="sexo">Qual o seu sexo</label>
+                <select name="sexo" id="sexo[]">
+                    <option value="masc">Masculino</option>
+                    <option value="fem">Feminino</option>
+                    <option value="nao">Prefiro não dizer</option>
+                </select>
+            </div>
+            <div class='erro' id="erro-cadastro" style="visibility: hidden;"></div><br>
             <input type="submit" value="Cadastrar">
         </form>
         <div class="form-footer">
             <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
         </div>
     </div>
+    </div>
     <?php include 'recursos/loginhandler.php'?>
+    <script src="recursos/javascript.js">erroCadastro();</script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-    $servidor= "localhost:3307";
+    $servidor= "localhost";
     $user= "site";
     $pass= "1105";
 
@@ -57,6 +57,6 @@ $db = "CREATE DATABASE IF NOT EXISTS trabalho";
         echo "";
     }
     else {
-        echo "Erro ao inserir dados" . $conex->error;
+        echo "<script src='recursos/javascript.js'>erroCadastro();</script>";
     }
 ?>

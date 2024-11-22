@@ -10,8 +10,7 @@
             <div class="main">
                 <H1>CATALOGO</H1>
                 <?php 
-                
-                
+                include 'recursos/geradorcatalogo.php'
                 ?>
             </div>
         </div>

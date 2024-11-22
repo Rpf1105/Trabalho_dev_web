@@ -1,0 +1,51 @@
+<?php
+
+    $servidor= "localhost";
+    $user= "site";
+    $pass= "1105";
+
+    $conex = new mysqli(
+        $servidor,
+        $user,
+        $pass
+    );
+
+    if($conex->connect_error){
+        die("Conexao falhou: " . $conex->connect_error);
+    }
+
+ //criacao do database
+$conex->query("USE trabalho");
+$db = "
+    CREATE TABLE IF NOT EXISTS catalogo(
+        id serial,
+        titulo varchar(100),
+        sinopse varchar(1000),
+        path_imagem varchar(500),
+        PRIMARY KEY(id)
+    );
+    ";
+if ($conex->query($db) === TRUE){
+}
+else {
+    echo "Erro ao criar tabela" . $conex->error;
+}
+$db = "SELECT id, titulo, sinopse, path_imagem FROM catalogo"; 
+$result = $conex->query($db); 
+if ($result->num_rows > 0) { 
+    while($row = $result->fetch_assoc()) { 
+        echo "<div class='produto'>
+        <div class='left'>
+            <h2>" . $row["titulo"] . "</h2>
+            <p>". $row["sinopse"] ."</p>
+        </div>
+    <div class='right'>
+        <img class='preview' src=" . $row["path_imagem"] ."alt=''>
+        <p>5/5</p>
+    </div>
+    </div>"; 
+    } 
+}  
+else { 
+      echo "No records has been found"; 
+} 
