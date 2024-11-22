@@ -41,11 +41,11 @@ if ($result->num_rows > 0) {
         </div>
     <div class='right'>
         <img class='preview' src=" . $row["path_imagem"] ."alt=''>
-        <p>5/5</p>
+        <p>placeholder nota</p>
     </div>
     </div>"; 
     } 
 }  
 else { 
-      echo "No records has been found"; 
+      echo "Não foi encontrado o conteúdo"; 
 } 
