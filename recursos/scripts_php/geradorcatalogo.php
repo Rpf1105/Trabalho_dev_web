@@ -15,6 +15,15 @@ if ($conex->query($db) === TRUE){
 else {
     echo "Erro ao criar tabela" . $conex->error;
 }
+//comando de inserir produto novo
+$db = "
+    insert into catalogo(titulo, sinopse, path_imagem) VALUES (
+        'produto de teste',
+	    'teste para funcionamento do site',
+	    'https://th.bing.com/th/id/OIP.CFv0NJgaFwm6UO-gMhCZNQAAAA?rs=1&pid=ImgDetMain'
+    );
+";
+//gerar catalogo na pagina
 $db = "SELECT id, titulo, sinopse, path_imagem FROM catalogo"; 
 $result = $conex->query($db); 
 if ($result->num_rows > 0) { 

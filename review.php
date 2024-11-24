@@ -10,7 +10,8 @@
             <div class="main">
                 <?php 
                 $id = $_GET["id"];
-                echo $id;
+                
+                include 'recursos\scripts_php\listareview.php'
                 ?>
             </div>
         </div>
