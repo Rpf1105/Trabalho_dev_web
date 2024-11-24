@@ -11,4 +11,5 @@
                     <li><a href="login.php">Entrar</a></li>
                 </ul>
             </div>
+            <?php include 'recursos\scripts_php\connect.php'?>
         </header>

@@ -9,6 +9,8 @@
         <div class="content">
             <div class="main">
                 <?php 
+                $id = $_GET["id"];
+                echo $id;
                 ?>
             </div>
         </div>
