@@ -40,9 +40,8 @@ $db = "CREATE DATABASE IF NOT EXISTS trabalho";
     }
     $db = "INSERT INTO dados_usuario(nickname, senha, email, nascimento, sexo) VALUES ('$nome', '$senha', '$email', '$datanasc', '$sexo')";
     if ($conex->query($db) === TRUE){
-        echo "";
     }
     else {
-        echo "<script src='recursos/javascript.js'>erroCadastro();</script>";
+        echo "Erro ao inserir dados" . $conex->error;
     }
 ?>

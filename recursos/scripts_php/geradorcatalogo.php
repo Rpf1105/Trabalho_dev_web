@@ -24,6 +24,9 @@ $db = "
     );
 ";
 //gerar catalogo na pagina
+$db = "SELECT AVG(nota) FROM reviews";
+$result = $conex->query($db);
+$nota = $result->fetch_assoc();
 $db = "SELECT id, titulo, sinopse, path_imagem FROM catalogo"; 
 $result = $conex->query($db); 
 if ($result->num_rows > 0) { 
@@ -35,7 +38,7 @@ if ($result->num_rows > 0) {
         </div>
     <div class='right'>
         <img class='preview' src=" . $row["path_imagem"] ."alt=''>
-        <p>placeholder nota</p>
+        <p>" . $nota['AVG(nota)']. "/5</p>
     </div>
     </div>"; 
     } 

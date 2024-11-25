@@ -76,3 +76,7 @@ header a:hover{
 .link_titulo:hover{
     color: #33F;
 }
+
+.prod{
+    display: flex;
+}

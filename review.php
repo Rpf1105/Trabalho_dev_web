@@ -8,9 +8,8 @@
        <?php include 'recursos/scripts_php/header.php' ?>
         <div class="content">
             <div class="main">
+                <div class="prod">
                 <?php 
-                $id = $_GET["id"];
-                
                 include 'recursos\scripts_php\listareview.php'
                 ?>
             </div>
