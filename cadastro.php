@@ -12,7 +12,7 @@
     <div class="content">
     <div class="container">
         <h2>Faça sua conta</h2>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="POST">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="POST" onsubmit="return validaform()">
             <label for="nome">Nome de Usuario</label>
             <input type="text" id="nome" name="nome" required>
 

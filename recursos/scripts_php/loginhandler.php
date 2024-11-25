@@ -43,6 +43,6 @@ $db = "CREATE DATABASE IF NOT EXISTS trabalho";
         echo "";
     }
     else {
-        echo "<script src='recursos/javascript.js'>erroCadastro();</script>";
+        echo "<script src='recursos/javascript.js'> erroCadastro();</script>";
     }
 ?>

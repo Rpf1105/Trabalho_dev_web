@@ -1,8 +1,8 @@
 <?php
 
     $servidor= "localhost";
-    $user= "site";
-    $pass= "1105";
+    $user= "root";
+    $pass= "";
 
     $conex = new mysqli(
         $servidor,

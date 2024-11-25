@@ -22,7 +22,7 @@
             <input type="submit" value="Entrar">
         </form>
         <div class="form-footer">
-            <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+            <p>Ainda não tem uma conta? <a href="cadastro.php">Cadastre-se aqui</a></p>
         </div>
     </div>
     </div>
