@@ -37,3 +37,31 @@ function getProfile(){
 function pageTheme(){
     
 }
+
+function validform(){
+    let nome = document.getElementById("nome").value;
+    let senha = document.getElementById("senha").value;
+    let email = document.getElementById("email").value;
+    let erroNome = document.getElementById("erronome");
+    let erroSenha = document.getElementById("errosenha");
+    let erroEmail = document.getElementById("erroemail");
+
+    erroNome.textContent = "";
+    erroSenha.textContent = "";
+    erroEmail.textContent = "";
+    let isvalid = true;
+
+    if (usuario === "" || /\d/.test(nome)){
+        erroNome.textContent = "Por favor, entre um nome válido"
+        isvalid = false;
+    }
+    if (senha === "" || /\d/.test(endereco)){
+        erroSenha.textContent = "Senha incorreta"
+        isvalid = false;
+    }
+    if (email === "" || !email.include("@")){
+        erroEmail.textContent = "Por favor entre com um email valido"
+        isvalid = false;
+    }
+    return isvalid
+}
