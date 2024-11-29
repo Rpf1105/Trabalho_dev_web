@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Nome da pagina</title>
+        <title>Reviews</title>
         <link rel="stylesheet" href="recursos/css/estilo.css">
     </head>
     <body>

@@ -17,25 +17,6 @@ label {
     display: block;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="submit"], select{
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
 .erro{
     padding: 10px;
     border: #F00 solid 2px;

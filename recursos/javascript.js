@@ -1,3 +1,37 @@
+//funcoes prontas
+function openPopup(){
+    document.getElementById("new_review").style.visibility= "visible";
+}
+
+function closePopup(){
+    document.getElementById("new_review").style.visibility= "hidden";
+}
+
+function erroForm(){
+    document.getElementById("erroform").style.display= "block";
+}
+function profileToggle(){
+    const visible = document.getElementById('menu_perfil');
+    if(visible.style.display == "none"){
+        visible.style.display = "block";
+    }
+    else{
+        visible.style.display = "none";
+    }
+}
+function pictureToggle(){
+    const visible = document.getElementById('form_foto');
+    if(visible.style.display == "none"){
+        visible.style.display = "block";
+    }
+    else{
+        visible.style.display = "none";
+    }
+}
+function allowReview(){
+    document.getElementById("review_button").style.display = "none";
+}
+//terminar
 function checkcadastro(){
     const senha = document.getElementById("senha").value;
     const user = document.getElementById("usuario").value;
@@ -17,21 +51,6 @@ function checkcadastro(){
     }   
 
     return isvalid
-}
-
-function erroCadastro(){
-    let erro_cad = document.getElementById("erro-cadastro");
-    document.getElementById("erro-cadastro").style.visibility= "visible";
-    erro_cad.textContent ="Esse email ja foi utilizado, por favor entre outro email"
-}
-
-function getProfile(){
-    //nome do usuario, placeholder, vai puxar do banco de dados
-    let nome = "Rogerio Perso Filho";
-    document.getElementById("nome").textContent=nome;
-    //pegar imagem do usuario aqui, tambem banco
-    let path = "";
-    document.getElementById("foto").src=path;
 }
 
 function pageTheme(){

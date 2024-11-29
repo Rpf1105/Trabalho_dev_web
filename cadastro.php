@@ -28,12 +28,12 @@
             <div class="custom_select">
                 <label for="sexo">Qual o seu sexo</label>
                 <select name="sexo" id="sexo[]">
-                    <option value="masc">Masculino</option>
-                    <option value="fem">Feminino</option>
-                    <option value="nao">Prefiro não dizer</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Indefinido">Prefiro não dizer</option>
                 </select>
             </div>
-            <div class='erro' id="erro-cadastro" style="visibility: hidden;"></div><br>
+            <div class='erro' id="erroform" style="display: none;"><p>Esse email ja foi utilizado, por favor entre outro email</p></div><br>
             <input type="submit" value="Cadastrar">
         </form>
         <div class="form-footer">
@@ -41,7 +41,7 @@
         </div>
     </div>
     </div>
-    <?php include 'recursos/scripts_php/loginhandler.php'?>
+    <?php include 'recursos/scripts_php/cadastrohandler.php'?>
     <script src="recursos/javascript.js">erroCadastro();</script>
 </body>
 </html>

@@ -24,7 +24,7 @@ body {
 header{
     position: sticky;
     display: flex;
-    background-color: darkblue;
+    background-color: #4CAF50;
     top: 0;
     justify-content: space-evenly;
 }
@@ -77,6 +77,119 @@ header a:hover{
     color: #33F;
 }
 
+/* Formulario da review */
 .prod{
     display: flex;
+    padding: 20px;
+}
+.info{
+    width: 60%;
+}
+.add_review{
+    padding: 10px;
+    text-align: center;
+}
+.review_tab{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    background-color: #FFF;
+    width: 40%;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+}
+.form_header{
+    display: flex;
+}
+.form_header button{
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    float: right;
+}
+.form_header h2{
+    margin-left: 30%;
+    padding-right: 20px;
+}
+.new_prod{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.review_button:hover{
+    background-color: #45a049;
+}
+.titulo{
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.review{
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.nota_radio{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.botao_perfil{
+    vertical-align: middle;
+    padding: 0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 0px;
+    align-content: center;
+}
+.botao_perfil > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.menu_perfil{
+    background-color: #FFF;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: absolute;
+    display: none;
+}
+.menu_perfil a{
+    color: #000;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="submit"], select{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
